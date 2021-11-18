@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     private TextMeshProUGUI scoreText;
     [SerializeField]
     private GameObject gameOverMenu;
-    
+    [SerializeField] private GameObject titleScreen;
 
 
     // Variables
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LoadLives();
+        Time.timeScale = 0.0f;
     }
 
     // Update is called once per frame
@@ -73,4 +73,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+
+    public void StartGame()
+    {
+        titleScreen.gameObject.SetActive(false);
+        LoadLives();
+        Time.timeScale = 1.0f;
+    }
 }

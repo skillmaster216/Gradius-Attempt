@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class WaveObserver : MonoBehaviour
 {
-
     [SerializeField]
     private GameObject powerUp;
     private bool _hasWaveEnemiesSpawn = false;
@@ -14,6 +13,7 @@ public class WaveObserver : MonoBehaviour
     }
 
     private Vector3 lastPos;
+
 
     // Update is called once per frame
     void LateUpdate()
@@ -35,6 +35,4 @@ public class WaveObserver : MonoBehaviour
         GameObject[] Current = GameObject.FindGameObjectsWithTag("Enemy_Wave");
         return Current.Length;
     }
-
-
 }
