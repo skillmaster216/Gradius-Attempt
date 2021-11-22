@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BaseEnemy : Enemy
 {
+    //INHERITANCE
     private void Start()
     {
         speed = 15;

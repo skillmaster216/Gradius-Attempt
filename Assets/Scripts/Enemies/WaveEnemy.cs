@@ -25,7 +25,7 @@ public class WaveEnemy : Enemy
             return _points;
         }
     }
-
+    //ABSTRACTION
     public override void Movement()
     {
         pos -= (transform.up * Time.deltaTime * speed);

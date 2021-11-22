@@ -7,6 +7,7 @@ public class WaveObserver : MonoBehaviour
     [SerializeField]
     private GameObject powerUp;
     private bool _hasWaveEnemiesSpawn = false;
+    //Encapsulation
     public bool HasWaveEnemiesSpawn { 
         get { return _hasWaveEnemiesSpawn; }
         set { _hasWaveEnemiesSpawn = value;  }
